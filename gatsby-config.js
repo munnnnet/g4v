@@ -10,7 +10,7 @@ module.exports = {
       feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `${urljoin(config.siteUrl, config.pathPrefix)}/logos/logo-48.png`,
+      image_url: `${urljoin(config.siteUrl, config.pathPrefix)}/logos/gtagdev.png`,
     },
   },
   plugins: [
@@ -91,12 +91,12 @@ module.exports = {
         display: 'minimal-ui',
         icons: [
           {
-            src: '/logos/logo-48.png',
+            src: '/logos/gtagdev.png',
             sizes: '48x48',
             type: 'image/png',
           },
           {
-            src: '/logos/logo-1024.png',
+            src: '/logos/gtagdev.png',
             sizes: '1024x1024',
             type: 'image/png',
           },

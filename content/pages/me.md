@@ -1,105 +1,49 @@
 ---
-title: About me
+title: About
 slug: me
 template: page
 ---
 
-I’m Tania Rascia, a full stack software developer, technical writer, and former chef.
+Welcome to gTAG.DEV.
 
-I started this website as a place to document everything I learned while going through a [career change](/how-i-made-a-career-change-into-web-development/). I [learn in public](/learn) and write about everything I know.
+The gTAG.DEV is an acronym of Google Analytics Tag. You know, Google Analytics is the best free tools to monitor and analyze the website. You can add the website, set the Goal, look the realtime traffic, even more, integration all of campaign strategy in a single place.
 
-I aim to create a beautiful corner of the web free of ads, sponsored posts, newsletter pop-ups, affiliate links, and the rest of the annoying noise we're so accustomed to seeing on the internet these days.
+That's I am, gTAG.DEV.
 
-## Links
+This is the place to document everything Author learned while going through an internet career, especially on search engine optimization conversion optimization, and web development.
 
-A non-exhaustive list.
+Sometimes, provide the script coding here if needed. The script is loveable and so excited with front-end developer. 
 
-- [Vanya Sergeev](https://sergeev.io)
-- [Teodor Nikolaev](https://teodor.co/)
-- [Craig Lam](http://craiglam.com/)
-- [Ben Schroeder](https://benschroeder.com/)
-- [Dave Bock](https://dkbock.com/)
-- [Joe Carlyon](http://qualitytesting.tech/)
-- [Carlos Santiago](https://www.carlossantiago.io/)
+- Upload and host the Git into [Netlify](https://app.netlify.com/)
+- Mostly, save the favourite frond-end collection at [Codepen](https://codepen.io)
 
-## Open Source Projects
+How about web infrastructure?
 
-- [TakeNote](https://github.com/taniarascia/takenote) – A web-based note-taking app with GitHub sync and Markdown support
-- [New Moon](https://github.com/taniarascia/new-moon) – the optimized dark theme for web development. Your new favorite theme
-- [Chip8.js](https://github.com/taniarascia/chip8) – a Chip-8 emulator written in JavaScript for terminal and the browser
-- [MVC.js](https://github.com/taniarascia/mvc) – a simple Todo MVC application in plain JavaScript
-- [Laconia](https://github.com/taniarascia/laconia) – a modern PHP MVC framework written without libraries or frameworks
-- [Primitive](https://github.com/taniarascia/primitive) – a minimalist front-end design toolkit built with Sass
-- [Snek.js](https://github.com/taniarascia/snek) – a terminal-based Snake implementation written in JavaScript (Node.js)
-- [Webpack Boilerplate](https://github.com/taniarascia/webpack-boilerplate) – a sensible Webpack 4 boilerplate with with Babel, Sass, ESLint, HMR, and prod/dev optimization
-- [tania.dev](https://github.com/taniarascia/taniarascia.com) – personal theme for Gatsby (the source of this website)
+- The domain saved in [Google Domains](https://domains.google)
+- Using [Gatsby Cloud](https://www.gatsbyjs.com/cloud/) for CMS Static Site
+- Put the HTML, CSS, Js, and all of the web assets in [Github](https://github.com)
+- Manage content into [ContentFul](https://www.contentful.com/)
+- About file hosting, uploaded into [Google Photos](https://www.google.com/photos/about/))
+- The CDN and SSL trust [Cloudflare](https://www.cloudflare.com)
 
-## Publications
+------
 
-Articles I've written for developer publications.
+## A man behind the gun
 
-- [DigitalOcean](/publications/#DigitalOcean)
-- [LogRocket](/publications/#LogRocket)
-- [Codrops](/publications/#Codrops)
-- [Progress](/publications/#Progress)
-- [Envato Tuts+](/publications/#EnvatoTuts+)
-- [SitePoint](/publications/#SitePoint)
-- [Gatsby](/publications/#Gatsby)
+He is [Fathul Mundzir](https://id.linkedin.com/in/fatul). A single author of gTAG.DEV.
 
-## Music
+In the past, he made the content strategies plan and execution at [Analogic Analytic](https://g.page/analogic-analytica?share), the local digital marketing that his friend build since 2017.
 
-Sometimes I sing and play accordion/piano. I like to [record music](https://soundcloud.com/ivoryandivory) in my spare time. Here are some.
+![gTag.dev](../images/fatul.webp)
 
-- [I’d Like to Walk Around In Your Mind](https://soundcloud.com/ivoryandivory/id-like-to-walk-around-in-your-mind)
-- [Such Great Heights](https://soundcloud.com/john-termaat/such-great-heights) (duet)
-- [Night Nurse](https://soundcloud.com/john-termaat/night-nurse) (duet)
-- [El Pasadiscos](https://soundcloud.com/ivoryandivory/el-pasadiscos)
-- [Mad World](https://soundcloud.com/ivoryandivory/mad-world)
-- [You And I](https://soundcloud.com/ivoryandivory/you-and-i)
-- [Just Like Heaven](https://soundcloud.com/ivoryandivory/just-like-heaven)
-- [The Winner Takes It All](https://soundcloud.com/ivoryandivory/the-winner-takes-it-all)
-- [Wicked Game](https://soundcloud.com/ivoryandivory/wicked-game)
-- [Truce](https://soundcloud.com/ivoryandivory/truce)
-- [Something Wild](https://soundcloud.com/ivoryandivory/something-wild)
-- [Bridge Over Troubled Water](https://soundcloud.com/ivoryandivory/bridge-over-troubled-water)
-- [Rainy Monday](https://soundcloud.com/ivoryandivory/rainy-monday)
-- [Saloon](https://soundcloud.com/ivoryandivory/saloon)
+With a degree in [Psychologist](http://digilib.uin-suka.ac.id/15425/24/10710062_bab-i_iv-atau-v_daftar-pustaka.pdf), he has a special touch to make the most complex of search engine marketing fit in human being behaviour. Especially appearing all of that in happiness sessions.
 
-## 3D Printer
+When he’s not ferociously following and covering the search industry, he’s busy writing the comprehensive SEO include trial strategy, create study case, and review the new strategies.
 
-- [Floppy Disk](https://github.com/taniarascia/3d#floppy-disk)
-- [Soap Holder](https://github.com/taniarascia/3d#soap-holder)
+His mind said:
 
-## Portfolio
+> I am so enthusiastic about SEO, Mobile SEO, Technical SEO, Local Search, Content Marketing, Blogging, and mostly being a winner in SERPs.
 
-A few sites I designed.
+The place of the long journey will show everything, trial-error, case studies, guideline, tutorial, all of digital marketing optimization. Written with comprehensive and in-depth.
 
-- [Cafe Ba-Ba-Reeba!](https://www.cafebabareeba.com/) - 2017
-- [Shaw's Crab House](https://www.shawscrabhouse.com) - 2017
-- [Tokio Asian Fusion](https://www.tokioasianfusion.com/) - 2017
-- [Stripburger](https://www.stripburger.com/) - 2017
-- [Beatrix Market](https://www.beatrixrestaurants.com/) - 2017
-- [Krispy Kreme PNW](https://www.krispykremepacificnw.com/) - 2016
-- [Il Porcellino](https://www.ilporcellinochicago.com/) - 2016
-
-## Currently Using
-
-- **Computer:** 15" MacBook Pro
-- **Hosting:** [Netlify](https://netlify.com)
-- **Editor:** [Visual Studio Code](https://code.visualstudio.com/)
-- **Static site generator:** [Gatsby](https://gatsbyjs.org)
-- **Syntax highlighting:** [PrismJS](http://prismjs.com/)
-- **Code theme:** [New Moon](https://taniarascia.github.io/new-moon)
-- **Email newsletter:** [Substack](https://substack.com)
-- **Notes:** [SimpleNote](https://simplenote.com/), [TakeNote](https://takenote.dev)
-
-## Year in Review
-
-- [2016 into 2017](/2016-into-2017)
-- [2017 into 2018](/2017-into-2018)
-- [2018 into 2019](/2018-into-2019)
-- [2019 into 2020](/2019-into-2020)
-
-## Miscellaneous
-
-- Won 3rd place for [Personal Developer Blog of the Year 2019](https://hackernoon.com/personal-developer-blog-of-the-year-hacker-noon-noonies-awards-2019-hz2tu32ql)
+Have the question or idea? Don't hesitate to reach out to me [here](https://gtag.dev/contact).

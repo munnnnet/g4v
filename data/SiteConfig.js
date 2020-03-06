@@ -1,23 +1,23 @@
 const config = {
-  siteTitle: 'Tania Rascia',
-  siteTitleShort: 'Tania Rascia',
-  siteTitleAlt: 'Tania Rascia',
-  siteLogo: '/logos/logo-1024.png',
-  siteUrl: 'https://www.taniarascia.com',
-  repo: 'https://github.com/taniarascia/taniarascia.com',
+  siteTitle: 'gTAG.DEV',
+  siteTitleShort: 'gTAG.DEV',
+  siteTitleAlt: 'gTAG.DEV',
+  siteLogo: '/logos/gtagdev.png',
+  siteUrl: 'https://gtag.dev',
+  repo: 'https://github.com/KontenaIndonesia/g4v',
   pathPrefix: '',
   dateFromFormat: 'YYYY-MM-DD',
   dateFormat: 'MMMM Do, YYYY',
   siteDescription:
-    'Tania Rascia is a full stack software developer specializing in modern JavaScript.',
+    'Combining organic search and technical web development',
   siteRss: '/rss.xml',
-  googleAnalyticsID: 'UA-42068444-1',
-  postDefaultCategoryID: 'Tech',
-  newsletter: 'https://taniarascia.substack.com',
-  newsletterEmbed: 'https://taniarascia.substack.com/embed',
-  userName: 'Tania',
-  userEmail: 'hello@taniarascia.com',
-  userTwitter: 'taniarascia',
+  googleAnalyticsID: 'UA-122456606-3',
+  postDefaultCategoryID: 'SEO',
+  newsletter: ' ',
+  newsletterEmbed: ' ',
+  userName: ' ',
+  userEmail: ' ',
+  userTwitter: '',
   menuLinks: [
     {
       name: 'About me',
@@ -26,10 +26,6 @@ const config = {
     {
       name: 'Articles',
       link: '/blog/',
-    },
-    {
-      name: 'Contact',
-      link: '/contact/',
     },
   ],
   themeColor: '#3F80FF', // Used for setting manifest and progress theme colors.
