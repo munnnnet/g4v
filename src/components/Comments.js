@@ -149,7 +149,6 @@ export default class Comments extends Component {
         {comments.length > 0 &&
           comments
             .filter(comment => !comment.parent_comment_id)
-            .filter((comment, i) => i < 50)
             .map((comment, i) => {
               let child
               if (comment.id) {

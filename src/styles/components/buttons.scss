@@ -135,26 +135,8 @@ a.patreon-button {
   &:focus,
   &:active {
     background: #f96854 !important;
-    border: 2px solid darken(#f96854, 15%);
+    border: 2px solid darken(#f96854, 10%);
     color: #fff !important;
-  }
-}
-
-.patreon {
-  background: #f96854;
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border: none !important;
-  font-weight: 500;
-  font-size: 1rem;
-  border-radius: $border-radius;
-  margin-bottom: 0.5rem;
-  margin-right: 0.75rem;
-  &:hover,
-  &:focus,
-  &:active {
-    background: darken(#f96854, 10%) !important;
-    color: white !important;
   }
 }
 

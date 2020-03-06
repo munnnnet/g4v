@@ -1,114 +1,100 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
-import GitHubButton from 'react-github-btn'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../layout'
 import PostListing from '../components/PostListing'
-import ProjectListing from '../components/ProjectListing'
-import SimpleListing from '../components/SimpleListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
-import projects from '../../data/projects'
-import speaking from '../../data/speaking'
-import podcasts from '../../data/podcasts'
-import quotes from '../../data/quotes'
-import tania from '../../content/images/profile.jpg'
 
-export default class Index extends Component {
+export default class BlogPage extends Component {
+  state = {
+    searchTerm: '',
+    currentCategories: [],
+    posts: this.props.data.posts.edges,
+    filteredPosts: this.props.data.posts.edges,
+  }
+
+  handleChange = async event => {
+    const { name, value } = event.target
+
+    await this.setState({ [name]: value })
+
+    this.filterPosts()
+  }
+
+  filterPosts = () => {
+    const { posts, searchTerm, currentCategories } = this.state
+
+    let filteredPosts = posts.filter(post =>
+      post.node.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+
+    if (currentCategories.length > 0) {
+      filteredPosts = filteredPosts.filter(
+        post =>
+          post.node.frontmatter.categories &&
+          currentCategories.every(cat => post.node.frontmatter.categories.includes(cat))
+      )
+    }
+
+    this.setState({ filteredPosts })
+  }
+
+  updateCategories = category => {
+    const { currentCategories } = this.state
+
+    if (!currentCategories.includes(category)) {
+      this.setState(prevState => ({
+        currentCategories: [...prevState.currentCategories, category],
+      }))
+    } else {
+      this.setState(prevState => ({
+        currentCategories: prevState.currentCategories.filter(cat => category !== cat),
+      }))
+    }
+  }
+
   render() {
-    const { data } = this.props
-
-    const latestPostEdges = data.latest.edges
-    const popularPostEdges = data.popular.edges
+    const { filteredPosts, searchTerm, currentCategories } = this.state
+    const filterCount = filteredPosts.length
+    const categories = this.props.data.categories.group
 
     return (
       <Layout>
-        <Helmet title={`${config.siteTitle} – Full Stack Software Developer`} />
+        <Helmet title={`Blog – ${config.siteTitle}`} />
         <SEO />
         <div className="container">
-          <div className="lead">
-            <div className="elevator">
-              <h1>{`Hey, I'm Tania`}</h1>
-              <p>
-                I'm a full stack software developer creating{' '}
-                <a href="https://github.com/taniarascia" target="_blank" rel="noopener noreferrer">
-                  open source
-                </a>{' '}
-                projects and <Link to="/blog">writing</Link> about modern JavaScript, Node.js, and
-                development.
-              </p>
-              <div className="social-buttons">
-                <GitHubButton
-                  href="https://github.com/taniarascia"
-                  data-size="large"
-                  data-show-count="true"
+          <h1> </h1>
+          <div className="category-container">
+            {categories.map(category => {
+              const active = currentCategories.includes(category.fieldValue)
+
+              return (
+                <div
+                  className={`category-filter ${active ? 'active' : ''}`}
+                  key={category.fieldValue}
+                  onClick={async () => {
+                    await this.updateCategories(category.fieldValue)
+                    await this.filterPosts()
+                  }}
                 >
-                  taniarascia
-                </GitHubButton>
-              </div>
-            </div>
-            <div className="newsletter-section">
-              <img src={tania} className="newsletter-avatar" alt="Tania" />
-              <div>
-                <h3>Email Newsletter</h3>
-                <p>
-                  I write tutorials. Get an update when something new comes out by signing up below!
-                </p>
-                <a className="button" href="https://taniarascia.substack.com">
-                  Subscribe
-                </a>
-              </div>
-            </div>
+                  {category.fieldValue}
+                </div>
+              )
+            })}
           </div>
-        </div>
-
-        <div className="container front-page">
-          <section className="section">
-            <h2>
-              Latest Articles
-              <Link to="/blog" className="view-all">
-                View all
-              </Link>
-            </h2>
-            <PostListing simple postEdges={latestPostEdges} />
-          </section>
-
-          <section className="section">
-            <h2>
-              Most Popular
-              <Link to="/categories/popular" className="view-all">
-                View all
-              </Link>
-            </h2>
-            <PostListing simple postEdges={popularPostEdges} />
-          </section>
-
-          <section className="section">
-            <h2>Open Source Projects</h2>
-            <ProjectListing projects={projects} />
-          </section>
-
-          <section className="section">
-            <h2>Interviews</h2>
-            <SimpleListing simple data={podcasts} />
-          </section>
-
-          <section className="section">
-            <h2>Talks</h2>
-            <SimpleListing simple data={speaking} />
-          </section>
-
-          <section className="section">
-            <h2>{`Other People's Opinions`}</h2>
-            <div className="quotations">
-              {quotes.map(quote => (
-                <blockquote className="quotation" key={quote.name}>
-                  <p>{quote.quote}</p>
-                  <cite>— {quote.name}</cite>
-                </blockquote>
-              ))}
-            </div>
-          </section>
+          <div className="search-container">
+            <input
+              className="search"
+              type="text"
+              name="searchTerm"
+              value={searchTerm}
+              placeholder="Type here to filter posts..."
+              onChange={this.handleChange}
+            />
+            <div className="filter-count">{filterCount}</div>
+          </div>
+          <PostListing postEdges={filteredPosts} />
         </div>
       </Layout>
     )
@@ -116,19 +102,15 @@ export default class Index extends Component {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    latest: allMarkdownRemark(
-      limit: 6
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "post" } } }
-    ) {
+  query BlogQuery {
+    posts: allMarkdownRemark(limit: 2000, sort: { fields: [fields___date], order: DESC }) {
       edges {
         node {
           fields {
             slug
             date
           }
-          excerpt
+          excerpt(pruneLength: 180)
           timeToRead
           frontmatter {
             title
@@ -147,34 +129,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    popular: allMarkdownRemark(
-      limit: 9
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { categories: { eq: "Popular" } } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            categories
-            thumbnail {
-              childImageSharp {
-                fixed(width: 150, height: 150) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-            date
-            template
-          }
-        }
+    categories: allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___categories) {
+        fieldValue
+        totalCount
       }
     }
   }

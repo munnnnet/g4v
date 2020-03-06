@@ -5,7 +5,6 @@ import config from '../../data/SiteConfig'
 
 export default class SEO extends Component {
   render() {
-    const replacePath = path => (path === `/` ? path : path.replace(/\/$/, ``));
     const { postNode, postPath, postSEO } = this.props
     let title
     let description
@@ -19,7 +18,7 @@ export default class SEO extends Component {
       if (postMeta.thumbnail) {
         image = postMeta.thumbnail.childImageSharp.fixed.src
       }
-      postURL = urljoin(config.siteUrl, replacePath(postPath))
+      postURL = urljoin(config.siteUrl, config.pathPrefix, postPath)
     } else {
       title = config.siteTitle
       description = config.siteDescription
@@ -78,7 +77,7 @@ export default class SEO extends Component {
         <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
 
         <meta property="og:url" content={postSEO ? postURL : blogURL} />
-        {postSEO && <meta property="og:type" content="article" />}
+        {postSEO ? <meta property="og:type" content="article" /> : null}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
@@ -88,6 +87,11 @@ export default class SEO extends Component {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+
+        <link lang="en-US" />
+        <link rel="alternate" hreflang="en-US" />
+
+        <script src="https://platform-api.sharethis.com/js/sharethis.js#property=5e5b56b532900200197ffe5a&product=inline-share-buttons"></script>
       </Helmet>
     )
   }

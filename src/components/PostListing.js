@@ -7,18 +7,20 @@ import { formatDate } from '../utils/global'
 export default class PostListing extends Component {
   getPostList() {
     const { postEdges } = this.props
-    const postList = postEdges.map(postEdge => {
-      return {
-        path: postEdge.node.fields.slug,
-        tags: postEdge.node.frontmatter.tags,
-        thumbnail: postEdge.node.frontmatter.thumbnail,
-        title: postEdge.node.frontmatter.title,
-        date: postEdge.node.fields.date,
-        excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead,
-        categories: postEdge.node.frontmatter.categories,
-      }
-    })
+    const postList = postEdges
+      .filter(postEdge => postEdge.node.frontmatter.template === 'post')
+      .map(postEdge => {
+        return {
+          path: postEdge.node.fields.slug,
+          tags: postEdge.node.frontmatter.tags,
+          thumbnail: postEdge.node.frontmatter.thumbnail,
+          title: postEdge.node.frontmatter.title,
+          date: postEdge.node.fields.date,
+          excerpt: postEdge.node.excerpt,
+          timeToRead: postEdge.node.timeToRead,
+          categories: postEdge.node.frontmatter.categories,
+        }
+      })
     return postList
   }
 
@@ -42,9 +44,9 @@ export default class PostListing extends Component {
             <Link to={post.path} key={post.title}>
               <div className="each">
                 {thumbnail ? <Img fixed={thumbnail} /> : <div />}
-                <div className="each-list-item">
+                <div>
                   <h2>{post.title}</h2>
-                  {!simple && <div className="excerpt">{date}</div>}
+                  {!simple ? <div className="excerpt">{date}</div> : null}
                 </div>
                 {newest && (
                   <div className="alert">

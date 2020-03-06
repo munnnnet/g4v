@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import floppy from '../images/floppy.png'
+import gtagdev from '../images/gtagdev.webp'
 import sun from '../images/sun.svg'
 import moon from '../images/moon.svg'
+import kofi from '../../content/thumbnails/kofi.png'
 import ThemeContext from '../context/ThemeContext'
 
 export default class Navigation extends Component {
-  static contextType = ThemeContext // eslint-disable-line
+  static contextType = ThemeContext
 
   state = {
     scrolled: false,
@@ -38,8 +39,8 @@ export default class Navigation extends Component {
         <div className="nav-container">
           <div className="brand">
             <Link to="/">
-              <img src={floppy} className="favicon" alt="Floppy Diskette" />
-              <span className="text">Tania Rascia</span>
+              <img src={gtagdev} className="favicon" alt="gtagdev logo" />
+              <span className="text">gTAG.DEV</span>
             </Link>
           </div>
           <div className="links">
@@ -48,20 +49,19 @@ export default class Navigation extends Component {
                 {link.name}
               </Link>
             ))}
-          </div>
-          <div className="cta">
-            <button
-              className="dark-switcher"
-              onClick={theme.toggleDark}
-              aria-label="Toggle Dark Mode."
-              title="Toggle Dark Mode"
-            >
-              {theme.dark ? (
-                <img src={sun} className="theme-icon" alt="Light Mode" />
-              ) : (
-                <img src={moon} className="theme-icon" alt="Dark Mode" />
-              )}
-            </button>
+            <div className="cta">
+              <button className="dark-switcher" onClick={theme.toggleDark}>
+                {theme.dark ? (
+                  <span>
+                    <img src={sun} className="theme-icon" alt="Light Mode" />
+                  </span>
+                ) : (
+                  <span>
+                    <img src={moon} className="theme-icon" alt="Dark Mode" />
+                  </span>
+                )}
+              </button>
+            </div>
           </div>
         </div>
       </nav>

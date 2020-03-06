@@ -6,7 +6,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
-  font-family: $font-family;
   font-size: 84% !important;
 }
 
@@ -31,6 +30,10 @@ table {
   font-size: 1.15rem;
 }
 
+.post ol {
+  margin: 0 0 0 1.5rem;
+}
+
 @include small-breakpoint {
   p,
   ol,
@@ -44,6 +47,18 @@ table {
 
 ul li p {
   margin: 0;
+}
+
+// Image disbale drag
+
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
 }
 
 // Remove extra margin for nested lists
@@ -86,25 +101,19 @@ h3:not(:first-child) {
 // Heading individual styles
 h1 {
   font-size: $h1-mobile;
-  font-weight: 600;
-  code {
-    font-size: $h1-mobile !important;
-  }
+  font-weight: 800;
 }
 
 h2 {
   font-size: $h2-mobile;
-  font-weight: 600;
-  padding-bottom: 0.2rem;
-  code {
-    font-size: $h2-mobile !important;
-  }
+  font-weight: 700;
+  border-bottom: 0px solid lighten($border-color, 12%);
+  padding-bottom: 0.5rem;
 }
 
 h3 {
   font-size: $h3-mobile;
-  font-weight: 600;
-  color: lighten($heading-font-color, 20%);
+  font-weight: 700;
 }
 
 h4 {
@@ -133,22 +142,16 @@ h5 {
   h1:not(:first-child),
   h2:not(:first-child),
   h3:not(:first-child) {
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
   }
 
   // Heading desktop individual styles
   h1 {
     font-size: $h1;
-    code {
-      font-size: $h1 !important;
-    }
   }
 
   h2 {
     font-size: $h2;
-    code {
-      font-size: $h2 !important;
-    }
   }
 
   h3 {
@@ -215,7 +218,6 @@ a {
   }
 }
 
-.lead,
 .post,
 .page {
   a:not(.button):not(.anchor):not(.gatsby-resp-image-link) {
@@ -234,9 +236,34 @@ a {
   }
 
   img {
-    max-width: 100%;
+    padding: 5%;
+    max-width: 850px;
+    width: 100%;
     height: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
   }
+}
+
+span.gatsby-resp-image-wrapper {
+  padding: 5%;
+  margin-left: 0 !important;
+  max-width: 650px !important;
+  width: 100% !important;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+span.gatsby-resp-image-background-image {
+  background-image: none !important;
+  background: #fff;
 }
 
 // Highlight
@@ -250,9 +277,20 @@ b {
   font-weight: 600;
 }
 
-blockquote cite {
-  display: block;
-  text-align: right;
+// Keyboard input
+kbd {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  color: #333;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0 0.1em;
+  padding: 0.1em 0.6em;
+  text-shadow: 0 1px 0 #fff;
 }
 
 // Line break
@@ -273,4 +311,189 @@ dd {
 
 [type='checkbox'] {
   margin-right: 1rem;
+}
+
+// Table of Content
+
+.toc-master {
+  right: 0;
+  top: 60px;
+  position: fixed;
+  background: #fff;
+  height: 100%;
+  padding-top: 35px;
+}
+
+.toc-articles {
+  padding: 10px 1% 10px 12px;
+  border: 0px solid #f2f2f2;
+  width: 250px;
+  max-height:450px;
+  height: auto;
+  overflow: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.toc-articles {
+  h3 {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  .toc-span-scroll {
+    font-size: 9.5px !important;
+    font-weight: 100;
+    letter-spacing: 0.01px;
+  }
+  ol {
+    li {
+      margin-bottom: 0px;
+      line-height: 25px;
+    };
+    a {
+      font-size: 1.1rem;
+      border-bottom: 0px solid #e2eafd !important;
+      color: #404040;
+      font-weight: 400;
+    };
+    ul {
+        margin-bottom: 5px;
+        li {
+          margin-left: 0px;
+          line-height: 19px;
+          a {
+            margin-left: 0px;
+            font-size: 1.03rem;
+          }
+        }
+    }
+  }
+}
+
+@media screen and (max-width:1166px){
+  .toc-master {
+    right: unset;
+    top: unset;
+    position: relative;
+    background: #fff;
+    padding-top: 0px;
+
+  };
+  .toc-articles {
+    padding: 0px 10px 20px;
+    border: 0px solid #f2f2f2;
+    width: 100%;
+    border-radius: 2px 2px 0px 0px;
+    height: auto;
+    max-height: 100%;
+    margin-left: -10px;
+    margin-right: 0px;
+    box-shadow: none;
+
+    .toc-span-scroll {
+      display: none;
+    }
+
+    h3 {
+      font-size: 1.3em;
+    }
+  };
+  .toc-articles {
+    ol {
+      a {
+        font-size: 100%;
+      }
+      ul {
+        li {
+          a {
+            font-size: 100%;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// Donation Fixed
+
+.fixed-cta {
+  position: fixed;
+  top: 90px;
+  left: 5%;
+}
+
+@media screen and (max-width:1060px){
+  .fixed-cta {
+    display: none;
+  }
+}
+
+.fixed-cta {
+  p {
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  a {
+    display: block !important;
+    margin: 8px;
+  }
+
+  .coffee-icon, .patreon-icon {
+    max-width: 17px;
+  }
+
+  .patreon-button {
+    padding: 6px 0px;
+  }
+
+  .donate-button {
+    padding: auto 5px !important;
+  }
+
+}
+
+.follows-twitter {
+  margin: 1em 0;
+  font-size: 0.7em;
+  display: block;
+}
+
+.flex {
+  iframe#twitter-widget-1 {
+    margin: 1em 0 !important;
+  }
+}
+
+// Label on NewsletterForm
+
+.label-submit-add {
+  display: none;
+}
+
+// Newsletter 
+
+.newletter-form {
+  background: #edf2fe;
+  padding: 30px 25px !important;
+  border-radius: 3px;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width:700px){
+  .newletter-form {
+    border-radius: 0px !important;
+  }
+}
+
+// Sharethis buttons
+
+.sharethis-inline-share-buttons {
+  text-align: left !important;
+  margin-bottom: 20px;
 }
