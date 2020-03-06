@@ -17,10 +17,6 @@ export default class Footer extends Component {
         <a href="/contact" rel="noopener noreferrer">
           Contact
         </a>
-
-        <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMW88T3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
       </footer>
     )
   }
