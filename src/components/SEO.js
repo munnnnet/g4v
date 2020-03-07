@@ -91,7 +91,7 @@ export default class SEO extends Component {
         <link lang="en-US" />
         <link rel="alternate" hreflang="en-US" />
 
-        <script src="https://platform-api.sharethis.com/js/sharethis.js#property=5e5b56b532900200197ffe5a&product=inline-share-buttons"></script>
+        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e5b56b532900200197ffe5a&product=inline-share-buttons' async='async'></script>
 
         <script type="text/javascript">
         var sc_project=12059697; 
@@ -100,7 +100,7 @@ export default class SEO extends Component {
         </script>
         <script type="text/javascript"
         src="https://www.statcounter.com/counter/counter.js"
-        async></script>
+        async='async'></script>
         
       </Helmet>
     )
