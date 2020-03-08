@@ -50,7 +50,7 @@ export default class Navigation extends Component {
               href="/contact/"
               >
               <button className="cta-button">
-                  <span>Increase traffics</span>
+                  <span>Get traffics!</span>
               </button>
             </a>
             {menuLinks.map(link => (
