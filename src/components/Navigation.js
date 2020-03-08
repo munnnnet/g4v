@@ -44,15 +44,20 @@ export default class Navigation extends Component {
             </Link>
           </div>
           <div className="links">
+            <a 
+              className="link-cta-button"
+              rel="noreferrer noopener"
+              >
+              <button className="cta-button">
+                  <span>Increase traffics</span>
+              </button>
+            </a>
             {menuLinks.map(link => (
               <Link key={link.name} to={link.link} activeClassName="active">
                 {link.name}
               </Link>
             ))}
             <div className="cta">
-              <button className="cta-button" onClick="location.href='https://gtag.dev/contact';">
-                Increase traffics
-              </button>
               <button className="dark-switcher" onClick={theme.toggleDark}>
                 {theme.dark ? (
                   <span>
