@@ -50,7 +50,7 @@ export default class Navigation extends Component {
               </Link>
             ))}
             <div className="cta">
-              <button className="cta-button" onClick="location.href='https://gtag.dev/contact/';" style="cursor: pointer;">
+              <button className="cta-button" onClick="location.href='https://gtag.dev/contact';">
                 Increase traffics
               </button>
               <button className="dark-switcher" onClick={theme.toggleDark}>
