@@ -1,6 +1,6 @@
 ---
 date: 2019-09-22
-title: 'Mobile App SEO: Organic Rank Strategy'
+title: 'Mobile App SEO: Organic Seach Strategy'
 template: post
 thumbnail: '../thumbnails/sass.png'
 slug: mobile-app-seo

@@ -858,13 +858,14 @@ blockquote {
     align-items: center;
     font-size: 0.85rem;
     padding: 0.5rem 0.75rem;
-    background: lighten($primary-color, 32%);
+    background: #fff;
     border-radius: $border-radius;
     margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+    margin-bottom: 0;
+    font-weight: 500;
     color: $primary-color;
     cursor: pointer;
+    border: 1.5px solid lighten($primary-color, 32%);
 
     .count {
       display: flex;

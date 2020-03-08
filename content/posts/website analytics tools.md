@@ -1,6 +1,6 @@
 ---
 date: 2020-03-06
-title: 'Website Analytics Tools Instead of Your Old Web Audit Software'
+title: '49 Website Analytics Tools'
 template: post
 thumbnail: '../thumbnails/jekyll.png'
 slug: website-analytics-tools

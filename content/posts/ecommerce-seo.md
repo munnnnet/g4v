@@ -1,6 +1,6 @@
 ---
 date: 2019-10-15
-title: 'The Journey of eCommerce SEO (Planning by 2020)'
+title: 'eCommerce SEO Plan (Updated 2020)'
 template: post
 thumbnail: '../thumbnails/bash.png'
 slug: ecommerce-seo
