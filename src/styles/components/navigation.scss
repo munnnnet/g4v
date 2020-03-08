@@ -109,6 +109,10 @@ button.dark-switcher {
   max-width: 30px;
 }
 
+button.cta-button {
+  margin-bottom: -2.5%;
+}
+
 @include small-breakpoint {
   .nav {
     &.scroll {
