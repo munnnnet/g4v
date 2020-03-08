@@ -43,11 +43,6 @@ export default class Navigation extends Component {
               <span className="text">gTAG.DEV</span>
             </Link>
           </div>
-          <div activeClassName="cta-contact">
-              <button className="cta-button" onClick="https://gtag.dev/contact/">
-                Increase traffics
-              </button>
-            </div>
           <div className="links">
             {menuLinks.map(link => (
               <Link key={link.name} to={link.link} activeClassName="active">
@@ -55,6 +50,9 @@ export default class Navigation extends Component {
               </Link>
             ))}
             <div className="cta">
+              <button className="cta-button" onclick="location.href='https://gtag.dev/contact/';" style="cursor: pointer;">
+                Increase traffics
+              </button>
               <button className="dark-switcher" onClick={theme.toggleDark}>
                 {theme.dark ? (
                   <span>
