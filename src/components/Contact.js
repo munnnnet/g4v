@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import NewsletterForm from './NewsletterForm'
+// import NewsletterForm from './NewsletterForm'
 
 export default class Contact extends Component {
   render() {
