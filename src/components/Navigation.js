@@ -44,7 +44,7 @@ export default class Navigation extends Component {
             </Link>
           </div>
           <div activeClassName="cta-contact">
-              <button className="cta-button" onClick="https://gtag.dev/contact/"/>
+              <button className="cta-button" onClick="https://gtag.dev/contact/">
                 Increase traffics
               </button>
             </div>
