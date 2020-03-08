@@ -7,9 +7,9 @@ export default class Contact extends Component {
       <>
         <h1>NEED MORE TRAFFICS AND SALES REVENUE?</h1>
         <p>
-          Learn how we get traffics through creative content marketing, run and track SEO campaign, and convert it become sales using conversion strategy. <b>Never any spam, ads, or affiliate links. Unsubscribe whenever.</b>
+          Learn how we get traffics through creative content marketing, run and track SEO campaign, and convert it become sales using conversion strategy.
         </p>
-        <NewsletterForm />
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfaGfQx9bPaORQJkIp6snYI70Ht47KAVEZlQwbxadGoqDWhrg/viewform?embedded=true" width="100%" height="auto" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </>
     )
   }
