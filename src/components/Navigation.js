@@ -47,6 +47,7 @@ export default class Navigation extends Component {
             <a 
               className="link-cta-button"
               rel="noreferrer noopener"
+              href="/contact/"
               >
               <button className="cta-button">
                   <span>Increase traffics</span>
