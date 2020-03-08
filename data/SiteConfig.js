@@ -18,10 +18,10 @@ const config = {
   userEmail: ' ',
   userTwitter: 'gtagdev',
   menuLinks: [
-    {
-      name: 'Articles',
-      link: '/',
-    }
+  //  {
+  //    name: 'Articles',
+  //    link: '/',
+  //  }
   ],
   themeColor: '#3F80FF', // Used for setting manifest and progress theme colors.
   backgroundColor: '#ffffff',
