@@ -43,6 +43,11 @@ export default class Navigation extends Component {
               <span className="text">gTAG.DEV</span>
             </Link>
           </div>
+          <div activeClassName="cta-contact">
+              <button className="cta-button" onClick="https://gtag.dev/contact/"/>
+                Increase traffics
+              </button>
+            </div>
           <div className="links">
             {menuLinks.map(link => (
               <Link key={link.name} to={link.link} activeClassName="active">

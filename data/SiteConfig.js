@@ -19,13 +19,9 @@ const config = {
   userTwitter: 'gtagdev',
   menuLinks: [
     {
-      name: 'Home',
+      name: 'Articles',
       link: '/',
-    },
-    {
-      name: 'About',
-      link: '/me/',
-    },
+    }
   ],
   themeColor: '#3F80FF', // Used for setting manifest and progress theme colors.
   backgroundColor: '#ffffff',
