@@ -110,7 +110,9 @@ button.dark-switcher {
 }
 
 button.cta-button {
-  margin-bottom: -2.5%;
+  margin-bottom: -3%;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 @include small-breakpoint {
