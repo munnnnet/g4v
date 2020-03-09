@@ -71,6 +71,10 @@ export default class SEO extends Component {
     }
     return (
       <Helmet>
+        <html lang="en-US" />
+        <link lang="en-US" />
+        <link rel="alternate" hreflang="en-US" />
+
         <meta name="description" content={description} />
         <meta name="image" content={image} />
 
@@ -87,9 +91,6 @@ export default class SEO extends Component {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
-
-        <link lang="en-US" />
-        <link rel="alternate" hreflang="en-US" />
 
         <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e5b56b532900200197ffe5a&product=inline-share-buttons' async='async'></script>
 
