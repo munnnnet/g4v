@@ -76,7 +76,7 @@ These are the tools that split into several groups by specific category:
         <li><a href="#mouseflow">Mouseflow</a></li>
         <li><a href="#lucky-orange">Lucky Orange</a></li>
       </ul>
-      <li><a href="#The-best-digital-marketing-kpi-dashboard">The Best Digital Marketing KPI Dashboard</a></li>
+      <li><a href="#the-best-digital-marketing-kpi-dashboard">Digital Marketing KPI Dashboard</a></li>
       <ul>
         <li><a href="#databox">Databox</a></li>
         <li><a href="#cyfe">Cyfe</a></li>
