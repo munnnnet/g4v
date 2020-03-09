@@ -1,3 +1,10 @@
 User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Disallow: /contact/
+Disallow: /tags/
+Disallow: /categoies/
+Disallow: /me/
 
 sitemap: https://gtag.dev/sitemap.xml
