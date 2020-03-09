@@ -1,6 +1,6 @@
 ---
 date: 2020-03-06
-title: '49 Website Analytics Tools'
+title: '49 Website Analytics Tools Instead of Your Old Web Audit Software'
 template: post
 thumbnail: '../thumbnails/jekyll.png'
 slug: website-analytics-tools
@@ -26,6 +26,76 @@ These are the tools that split into several groups by specific category:
 * Best Digital Marketing KPI Dashboard 
 
 > The sort of all this did not represent the quality each. This is just a random sort. 
+
+<div class="toc-master">
+  <div class="toc-articles">
+    <h3>Table of Content <span class="toc-span-scroll">scroll see details</span></h3>
+    <ol>
+      <li><a href="#simplified-web-analytics">Simplified Web Analytics</a></li>
+      <ul>
+        <li><a href="#statcounter">StatCounter</a></li>
+        <li><a href="#motomo-formerly-piwik">Motomo (Formerly Piwik)</a></li>
+        <li><a href="#open-web-analytics">Open Web Analytics</a></li>
+        <li><a href="#clicky">Clicky</a></li>
+        <li><a href="#paveai">PaveAI</a></li>
+      </ul>
+      <li><a href="#seo-analytics-tools">SEO analytics tools</a></li>
+      <ul>
+        <li><a href="#bing-webmaster">Bing Webmaster</a></li>
+        <li><a href="#rank-science">Rank Science</a></li>
+        <li><a href="#siteimprove">Siteimprove</a></li>
+        <li><a href="#brightedge">BrightEdge</a></li>
+        <li><a href="#netpeaksoftware">NetpeakSoftware</a></li>
+        <li><a href="#silktide">Silktide</a></li>
+        <li><a href="#seopowersuite">SEOPowerSuite</a></li>
+        <li><a href="#raventools">RavenTools</a></li>
+        <li><a href="#agencyanalytics">AgencyAnalytics</a></li>
+        <li><a href="#web-ceo">Web CEO</a></li>
+        <li><a href="#contentkingapp">ContentKingApp</a></li>
+        <li><a href="#morningscore">MorningScore</a></li>
+        <li><a href="#monsido-seo">Monsido SEO</a></li>
+      </ul>
+      <li><a href="#best-content-analytics-software">Best Content Analytics Software</a></li>
+      <ul>
+        <li><a href="#conductor-searchlight">Conductor Searchlight</a></li>
+        <li><a href="#clearscope">ClearScope</a></li>
+        <li><a href="#parsely">Parse.ly</a></li>
+        <li><a href="#marketmuse">MarketMuse</a></li>
+        <li><a href="#bitly">Bitly</a></li>
+        <li><a href="#rebrandly">Rebrandly</a></li>
+        <li><a href="#squeezecmm">SqueezeCMM</a></li>
+        <li><a href="#dnnsoftware-evoq-content">Dnnsoftware Evoq-content</a></li>
+        <li><a href="#acrolinx">Acrolinx</a></li>
+        <li><a href="#knotch">Knotch</a></li>
+        <li><a href="#storychief">StoryChief</a></li>
+        <li><a href="#giveitanudge-insights">Giveitanudge Insights</a></li>
+        <li><a href="#chartbeat">Chartbeat</a></li>
+      </ul>
+      <li><a href="#conversion-rate-optimization-tools">Conversion Rate Optimization Tools</a></li>
+      <ul>
+        <li><a href="#mouseflow">Mouseflow</a></li>
+        <li><a href="#lucky-orange">Lucky Orange</a></li>
+      </ul>
+      <li><a href="#The-best-digital-marketing-kpi-dashboard">The Best Digital Marketing KPI Dashboard</a></li>
+      <ul>
+        <li><a href="#databox">Databox</a></li>
+        <li><a href="#cyfe">Cyfe</a></li>
+        <li><a href="#datahero">Datahero</a></li>
+        <li><a href="#domo">Domo</a></li>
+        <li><a href="#supermetrics">Supermetrics</a></li>
+        <li><a href="#cynapse-numerics">Cynapse Numerics</a></li>
+        <li><a href="#calypsus--calypsusio">Calypsus | Calypsus.io</a></li>
+        <li><a href="#geckoboard">Geckoboard</a></li>
+        <li><a href="#dashthis">DashThis</a></li>
+        <li><a href="#klipfolio">Klipfolio</a></li>
+        <li><a href="#megalytic">Megalytic</a></li>
+        <li><a href="#idashboards">Idashboards</a></li>
+        <li><a href="#agencyanalytics-1">AgencyAnalytics</a></li>
+        <li><a href="#zoho-analytics">Zoho Analytics</a></li>
+      </ul>
+    </ol>
+  </div>
+</div>
 
 ----
 
@@ -764,7 +834,7 @@ The differences among this pricing are on five component. You will get a discoun
 > Hotjar, Mixpanel, Crazyegg, VWO and other conversion rate optimization tools did not explain by me into this article. That is because I think these are overly familiar. 
 
 ---
-The Best Digital Marketing KPI Dashboard (Multiple Data Sources From Analytics Platform) 
+## The Best Digital Marketing KPI Dashboard 
 
 What is digital marketing KPIs Dashboard? This is the tools help us connect all data source, automatically calculate metrics, and show the result of that into a single dashboard.
 
