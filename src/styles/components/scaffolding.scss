@@ -348,16 +348,20 @@ dd {
     letter-spacing: 0.01px;
   }
   ol {
+    margin: 0 0 0 -1.5rem !important;
+
     li {
       margin-bottom: 0px;
       line-height: 25px;
-    };
+    }
+
     a {
       font-size: 1.1rem;
       border-bottom: 0px solid #e2eafd !important;
       color: #404040;
       font-weight: 400;
-    };
+    }
+
     ul {
         margin-bottom: 5px;
         li {
