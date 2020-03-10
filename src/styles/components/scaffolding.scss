@@ -502,8 +502,17 @@ dd {
   margin-bottom: 20px;
 }
 
-// Embed Google form
+// Databox
 
-form#mG61Hd {
-  margin: 0 -5% !important;
+.databox-css {
+  padding:63% 0 0 0; 
+  position:relative;
+
+  .databox-css-child {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%;
+  }
 }
