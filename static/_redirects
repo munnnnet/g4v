@@ -1,18 +1,18 @@
 # Redirects from what the browser requests to what we serve
 # https://www.netlify.com/docs/redirects/
-/                                         https://metricxl.com
-/website-analytics-tools/                 https://metricxl.com/website-analytics-tools/
-/ecommerce-seo/                           https://metricxl.com/ecommerce-seo/
-/mobile-seo-strategy/                     https://metricxl.com/mobile-seo-strategy/
-/indexing-algorithms/                     https://metricxl.com/indexing-algorithms/
-/mobile-app-seo/                          https://metricxl.com/mobile-app-seo/
-/google-algorithm/                        https://metricxl.com/google-algorithm/
-/not-set-google-analytics/                https://metricxl.com/not-set-google-analytics/
-/seo-content-marketing/                   https://metricxl.com/seo-content-marketing/
-/basic-on-page-seo/                       https://metricxl.com/basic-on-page-seo/
-/google-search-console/                   https://metricxl.com/google-search-console/
-/link-building-techniques/                https://metricxl.com/link-building-techniques/
-/schema-markup/                           https://metricxl.com/schema-markup/
-/measure-website-speed/                   https://metricxl.com/measure-website-speed/
-/google-analytics-tutorial/               https://metricxl.com/google-analytics-tutorial/
-/create-a-wordpress-website/              https://metricxl.com/create-a-wordpress-website/
+/                                         https://metricxl.com                              301
+/website-analytics-tools/                 https://metricxl.com/website-analytics-tools/     301
+/ecommerce-seo/                           https://metricxl.com/ecommerce-seo/               301
+/mobile-seo-strategy/                     https://metricxl.com/mobile-seo-strategy/         301
+/indexing-algorithms/                     https://metricxl.com/indexing-algorithms/         301
+/mobile-app-seo/                          https://metricxl.com/mobile-app-seo/              301
+/google-algorithm/                        https://metricxl.com/google-algorithm/            301
+/not-set-google-analytics/                https://metricxl.com/not-set-google-analytics/    301
+/seo-content-marketing/                   https://metricxl.com/seo-content-marketing/       301
+/basic-on-page-seo/                       https://metricxl.com/basic-on-page-seo/           301
+/google-search-console/                   https://metricxl.com/google-search-console/       301
+/link-building-techniques/                https://metricxl.com/link-building-techniques/    301
+/schema-markup/                           https://metricxl.com/schema-markup/               301
+/measure-website-speed/                   https://metricxl.com/measure-website-speed/       301
+/google-analytics-tutorial/               https://metricxl.com/google-analytics-tutorial/   301
+/create-a-wordpress-website/              https://metricxl.com/create-a-wordpress-website/  301
