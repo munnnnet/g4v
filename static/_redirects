@@ -1,3 +1,18 @@
 # Redirects from what the browser requests to what we serve
 # https://www.netlify.com/docs/redirects/
+/                                         https://metricxl.com
 /website-analytics-tools/                 https://metricxl.com/website-analytics-tools/
+/ecommerce-seo/                           https://metricxl.com/ecommerce-seo/
+/mobile-seo-strategy/                     https://metricxl.com/mobile-seo-strategy/
+/indexing-algorithms/                     https://metricxl.com/indexing-algorithms/
+/mobile-app-seo/                          https://metricxl.com/mobile-app-seo/
+/google-algorithm/                        https://metricxl.com/google-algorithm/
+/not-set-google-analytics/                https://metricxl.com/not-set-google-analytics/
+/seo-content-marketing/                   https://metricxl.com/seo-content-marketing/
+/basic-on-page-seo/                       https://metricxl.com/basic-on-page-seo/
+/google-search-console/                   https://metricxl.com/google-search-console/
+/link-building-techniques/                https://metricxl.com/link-building-techniques/
+/schema-markup/                           https://metricxl.com/schema-markup/
+/measure-website-speed/                   https://metricxl.com/measure-website-speed/
+/google-analytics-tutorial/               https://metricxl.com/google-analytics-tutorial/
+/create-a-wordpress-website/              https://metricxl.com/create-a-wordpress-website/
